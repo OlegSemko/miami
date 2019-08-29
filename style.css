@@ -103,12 +103,17 @@ body {
 .section {
   padding: 130px 0;
   position: relative;
-  overflow: hidden;
 }
 
 .container {
   margin: 0 auto;
   max-width: 940px;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .best__motto {
@@ -181,6 +186,11 @@ body {
 
 .section:nth-child(odd) {
   background: #eeeeee;
+}
+
+.container .tt {
+  display: flex;
+  justify-content: center;
 }
 
 .apart {
