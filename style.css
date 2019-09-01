@@ -399,7 +399,23 @@ ol {
   .container .tt {
     display: block;
   }
-  
+  .header__call {
+    clear: right;
+  }
+  .header__phone {
+    float: right;
+    padding-top: 10px;
+    margin-bottom: 10px;
+  }
+  .header {
+    top: 30px;
+  }
+  .header__logo {
+    top: 0;
+    left: 0;
+  }
+}
+
 @media (max-width: 780px) {
   .hero:before {
     position: absolute;
