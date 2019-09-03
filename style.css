@@ -349,7 +349,7 @@ ol {
   left: -5px;
 }
 
-ol li {
+ol li, ul li {
   list-style-position: inside;
 }
 
