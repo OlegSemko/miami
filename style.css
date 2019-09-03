@@ -110,6 +110,13 @@ body {
   max-width: 940px;
 }
 
+.icon-decor {
+  position: absolute;
+  right: 50%;
+  top: 35px;
+  transform: translate(50%, 0);
+}
+
 .container::after {
   content: "";
   clear: both;
@@ -372,6 +379,7 @@ ol {
   top: 50%;
   transform: translate(-50%, -50%);
   font-size: 78px;
+  fill: #fff;
 }
 
 .footer__copy {
