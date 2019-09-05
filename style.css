@@ -46,12 +46,12 @@ body {
   text-decoration: none;
   color: #fff;
   opacity: 0.6;
+  transition: opacity .3s ease;
 }
 
 .header__phone:hover, 
 .header__call:hover {
   opacity: 1;
-  transition: opacity .3s ease;
 }
 
 .header__logo {
@@ -97,15 +97,29 @@ body {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
+  display: inline-block;
+}
+
+.nav a::after {
+  content: '';
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width .3s ease;  
 }
 
 .container ul {
   list-style-type: none;
 }
 
-.nav a:hover {
-  border-bottom: 2px solid silver;
+.nav a:hover::after {
+  width: 100%;
+  transition: width .3s ease;
 }
+
 @media only screen and (max-width: 720px) {
   .nav {
     position: static;
@@ -326,8 +340,8 @@ body {
 
 .textual {
   font-size: 16px;
-  line-height: 1.5;
-  color: #000;
+  line-height: 1.8;
+  color: #333333;
 }
 
 .t__descr {
@@ -346,7 +360,6 @@ p {
 ol {
   list-style: decimal;
   position: relative;
-  left: -5px;
 }
 
 ol li, ul li {
@@ -406,6 +419,7 @@ ol li, ul li {
   color: #fff;
   font-weight: 600;
   width: 100%;
+  transition: all .5s;
 }
 
 .button:hover {
@@ -414,7 +428,7 @@ ol li, ul li {
   text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
   -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
   -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-  transition: all 0.4s ease 0s;
+  transition: all .5s;
 }
 
 .button_inline {
@@ -467,7 +481,7 @@ ol li, ul li {
 .testis {
   display: flex;
   justify-content: space-between;
-  margin: 0 20px 20px 20px;
+  margin: 0 30px 20px 30px;
 }
 
 .t {
@@ -477,7 +491,7 @@ ol li, ul li {
 
 .textual_big a {
   text-decoration: none;
-  color: #000;
+  color: #333333;
 }
 
 .textual_big a:hover {
